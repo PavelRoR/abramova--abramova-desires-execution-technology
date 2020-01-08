@@ -1,0 +1,33 @@
+-var head_url = 'https://abramova.mastervision.su/desires-execution-technology/';
+-var head_title = '«Технология исполнения желаний»';
+-var head_description = 'Закрытый тренинг с Жанной Абрамовой';
+//- -var head_img = 'img/banner.jpg';
+-var styles = 'css/styles.min.css';
+-var fav_ico = 'favicon.ico';
+-var fav_png = 'favicon.png';
+
+mixin b(wcl,cl,href,p,target,id)
+	.button-wrapper(class=wcl)
+		a.button(class=cl href=href target=target id=id)=p
+mixin gt(cl,h3)
+	h3.general-title(class=cl)=h3
+
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		include pug/head
+		include pug/scripts/head_scripts
+	body
+		include pug/scripts/body_top_scripts
+		include pug/main/0.header.pug
+		include pug/main/1.main.pug
+		include pug/main/2.for.pug
+		include pug/main/3.lets.pug
+		include pug/main/4.plan.pug
+		include pug/main/5.author.pug
+		include pug/main/6.revs.pug
+		include pug/main/7.last.pug
+		include pug/main/8.footer.pug
+		include pug/main/9.scripts.pug
+		//- include pug/scripts/chat
+		include pug/scripts/body_bottom_scripts

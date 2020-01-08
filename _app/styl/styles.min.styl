@@ -1,0 +1,173 @@
+A='Akrobat', sans-serif
+AB='AkrobatBold', sans-serif
+C='Comfortaa', sans-serif
+CB='ComfortaaBold', sans-serif
+CL='ComfortaaLight', sans-serif
+
+@font-face {
+    font-family: 'Akrobat';
+    src: url('../fonts/Akrobat.eot');
+    src: url('../fonts/Akrobat.eot') format('embedded-opentype'),
+         url('../fonts/Akrobat.woff2') format('woff2'),
+         url('../fonts/Akrobat.woff') format('woff'),
+         url('../fonts/Akrobat.ttf') format('truetype'),
+         url('../fonts/Akrobat.svg#Akrobat') format('svg');
+	font-display: fallback;
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+    font-family: 'AkrobatBold';
+    src: url('../fonts/AkrobatBold.eot');
+    src: url('../fonts/AkrobatBold.eot') format('embedded-opentype'),
+         url('../fonts/AkrobatBold.woff2') format('woff2'),
+         url('../fonts/AkrobatBold.woff') format('woff'),
+         url('../fonts/AkrobatBold.ttf') format('truetype'),
+         url('../fonts/AkrobatBold.svg#AkrobatBold') format('svg');
+	font-display: fallback;
+	font-weight: bold
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Comfortaa';
+	src: url('../fonts/Comfortaa.eot');
+	src: url('../fonts/Comfortaa.eot') format('embedded-opentype'),
+		 url('../fonts/Comfortaa.woff2') format('woff2'),
+		 url('../fonts/Comfortaa.woff') format('woff'),
+		 url('../fonts/Comfortaa.ttf') format('truetype'),
+		 url('../fonts/Comfortaa.svg#Comfortaa') format('svg');
+	font-display: fallback;
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'ComfortaaBold';
+	src: url('../fonts/ComfortaaBold.eot');
+	src: url('../fonts/ComfortaaBold.eot') format('embedded-opentype'),
+		 url('../fonts/ComfortaaBold.woff2') format('woff2'),
+		 url('../fonts/ComfortaaBold.woff') format('woff'),
+		 url('../fonts/ComfortaaBold.ttf') format('truetype'),
+		 url('../fonts/ComfortaaBold.svg#ComfortaaBold') format('svg');
+	font-display: fallback;
+	font-weight: bold
+	font-style: normal;
+}
+@font-face {
+	font-family: 'ComfortaaLight';
+	src: url('../fonts/ComfortaaLight.eot');
+	src: url('../fonts/ComfortaaLight.eot') format('embedded-opentype'),
+		 url('../fonts/ComfortaaLight.woff2') format('woff2'),
+		 url('../fonts/ComfortaaLight.woff') format('woff'),
+		 url('../fonts/ComfortaaLight.ttf') format('truetype'),
+		 url('../fonts/ComfortaaLight.svg#ComfortaaLight') format('svg');
+	font-display: fallback;
+	font-weight: 100
+	font-style: normal;
+}
+
+@import '../_css/bootstrap.min.css'
+
+*
+	margin 0
+	padding 0
+	outline none
+body
+	font-size: 19px
+	font-family: A
+	background-color: #fff
+	color #000
+	line-height: 30px
+a
+	color: #fefefe
+	&:focus
+		outline: 0
+	&:hover
+		text-decoration none
+h1,h2,h3,h4,h5,h6
+	font-weight normal
+	margin 0
+button
+	border none
+section
+header
+footer
+	width 100%
+	display block
+.video-wrapper
+	margin 0 auto
+	position relative
+	width 100%
+	&:before
+		content ''
+		height 0
+		padding-top 56.25%
+		display block
+	&:after
+		content: ''
+		display block
+		position: absolute
+		top: 0
+		left 0
+		right 0
+		width: 100%
+		height 70px
+	img,
+	iframe
+		position absolute
+		width 100%
+		height 100%
+		display block
+		background-color #000
+		border-radius 3px
+		border: 0
+		top 0
+		left 0
+		right 0
+		bottom 0
+		cursor pointer
+.button
+	display inline-block
+	text-align: center
+	width: auto
+	padding 17px 50px
+	font-size: 24px;
+	font-family: AB
+	color: rgb(68, 20, 103);
+	background-color: rgb(255, 189, 95);
+	line-height: 24px
+	transition: all .4s ease
+	&:focus
+		text-decoration: none
+		color: rgb(68, 20, 103);
+		background-color: rgb(255, 189, 95);
+	&:hover
+		text-decoration: none
+		color rgb(255, 189, 95);
+		background-color: rgb(68, 20, 103);
+	&-wrapper
+		text-align: center
+.general-title
+	font-size: 30px;
+	font-family: CB
+	color: rgb(255, 255, 255);
+	line-height: 1;
+	text-align: center;
+	margin 0 0 55px
+	padding 5px 15px
+	background-color: #975BA7
+	background-image url(../img/backs/title-bg.png)
+	background-repeat no-repeat
+	background-position: center
+	background-size: cover
+
+
+@import 'main/0.header'
+@import 'main/1.main'
+@import 'main/2.for'
+@import 'main/3.lets'
+@import 'main/4.plan'
+@import 'main/5.author'
+@import 'main/6.revs'
+@import 'main/7.last'
+@import 'main/8.footer'
+@import 'main/9.medias'
