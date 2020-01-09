@@ -1,0 +1,32 @@
+header
+	background-color: #CFB3D6
+	padding 20px 0
+#logo
+	float left
+.contacts
+	float: right
+	text-align: right
+.contact
+	display: inline-block
+	line-height: 47px
+	color: #000
+	font-size: 16px
+	font-family: "Arial", sans-serif
+	margin 0 10px
+	padding-left: 25px
+	background-repeat no-repeat
+	background-position: left center
+	&&-tel
+		background-image url(../img/icons/tube.png)
+		&:first-of-type
+			margin-left: 0
+	&&-skype
+		background-image url(../img/icons/skype.png)
+	&&-email
+		padding-left: 33px
+		background-image url(../img/icons/envelope.png)
+	&:focus
+		color #000
+	&:hover
+		color #000
+		text-decoration: underline

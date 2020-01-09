@@ -1,31 +1,43 @@
 A='Akrobat', sans-serif
 AB='AkrobatBold', sans-serif
+ABk='AkrobatBlack', sans-serif
 C='Comfortaa', sans-serif
 CB='ComfortaaBold', sans-serif
-CL='ComfortaaLight', sans-serif
 
 @font-face {
-    font-family: 'Akrobat';
-    src: url('../fonts/Akrobat.eot');
-    src: url('../fonts/Akrobat.eot') format('embedded-opentype'),
-         url('../fonts/Akrobat.woff2') format('woff2'),
-         url('../fonts/Akrobat.woff') format('woff'),
-         url('../fonts/Akrobat.ttf') format('truetype'),
-         url('../fonts/Akrobat.svg#Akrobat') format('svg');
+	font-family: 'Akrobat';
+	src: url('../fonts/Akrobat.eot');
+	src: url('../fonts/Akrobat.eot') format('embedded-opentype'),
+		 url('../fonts/Akrobat.woff2') format('woff2'),
+		 url('../fonts/Akrobat.woff') format('woff'),
+		 url('../fonts/Akrobat.ttf') format('truetype'),
+		 url('../fonts/Akrobat.svg#Akrobat') format('svg');
 	font-display: fallback;
 	font-weight: normal;
 	font-style: normal;
 }
 @font-face {
-    font-family: 'AkrobatBold';
-    src: url('../fonts/AkrobatBold.eot');
-    src: url('../fonts/AkrobatBold.eot') format('embedded-opentype'),
-         url('../fonts/AkrobatBold.woff2') format('woff2'),
-         url('../fonts/AkrobatBold.woff') format('woff'),
-         url('../fonts/AkrobatBold.ttf') format('truetype'),
-         url('../fonts/AkrobatBold.svg#AkrobatBold') format('svg');
+	font-family: 'AkrobatBold';
+	src: url('../fonts/AkrobatBold.eot');
+	src: url('../fonts/AkrobatBold.eot') format('embedded-opentype'),
+		 url('../fonts/AkrobatBold.woff2') format('woff2'),
+		 url('../fonts/AkrobatBold.woff') format('woff'),
+		 url('../fonts/AkrobatBold.ttf') format('truetype'),
+		 url('../fonts/AkrobatBold.svg#AkrobatBold') format('svg');
 	font-display: fallback;
 	font-weight: bold
+	font-style: normal;
+}
+@font-face {
+	font-family: 'AkrobatBlack';
+	src: url('../fonts/AkrobatBlack.eot');
+	src: url('../fonts/AkrobatBlack.eot') format('embedded-opentype'),
+		 url('../fonts/AkrobatBlack.woff2') format('woff2'),
+		 url('../fonts/AkrobatBlack.woff') format('woff'),
+		 url('../fonts/AkrobatBlack.ttf') format('truetype'),
+		 url('../fonts/AkrobatBlack.svg#AkrobatBlack') format('svg');
+	font-display: fallback;
+	font-weight: 900
 	font-style: normal;
 }
 @font-face {
@@ -52,20 +64,9 @@ CL='ComfortaaLight', sans-serif
 	font-weight: bold
 	font-style: normal;
 }
-@font-face {
-	font-family: 'ComfortaaLight';
-	src: url('../fonts/ComfortaaLight.eot');
-	src: url('../fonts/ComfortaaLight.eot') format('embedded-opentype'),
-		 url('../fonts/ComfortaaLight.woff2') format('woff2'),
-		 url('../fonts/ComfortaaLight.woff') format('woff'),
-		 url('../fonts/ComfortaaLight.ttf') format('truetype'),
-		 url('../fonts/ComfortaaLight.svg#ComfortaaLight') format('svg');
-	font-display: fallback;
-	font-weight: 100
-	font-style: normal;
-}
 
 @import '../_css/bootstrap.min.css'
+@import '../_css/flipclock.min.css'
 @import '../_css/jquery.fancybox.min.css'
 
 *
@@ -119,7 +120,7 @@ footer
 		height 100%
 		display block
 		background-color #000
-		border-radius 3px
+		border-radius 0
 		border: 0
 		top 0
 		left 0
@@ -147,6 +148,8 @@ footer
 		background-color: rgb(68, 20, 103);
 	&-wrapper
 		text-align: center
+		position relative
+		z-index 99
 .general-title
 	font-size: 30px;
 	font-family: CB
@@ -168,7 +171,7 @@ footer
 	span
 		display: inline-block
 		font-size: 24px;
-		font-family: AB
+		font-family: CB
 		color: #fff
 		background-color: #8F5BA7
 		padding 0 22px 5px

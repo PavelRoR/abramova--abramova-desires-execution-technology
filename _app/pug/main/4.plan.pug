@@ -22,7 +22,9 @@ section#plan
 			.col-md-4.col-sm-6
 				.day.day-5
 					h4.day-title 5
-					p.day-text Ритуал монетизации (увеличиваем доход в 2 раза)
+					p.day-text Ритуал монетизации 
+						br
+						| (увеличиваем доход в 2 раза)
 		.row
 			.col-md-4.col-sm-4
 				.day.day-6
@@ -35,7 +37,9 @@ section#plan
 			.col-md-4.col-sm-4
 				.day.day-8
 					h4.day-title 8
-					p.day-text Манифестация здоровья (код молодости и здоровья)
+					p.day-text Манифестация здоровья 
+						br
+						| (код молодости и здоровья)
 		.row
 			.col-md-4.col-sm-6.col-md-offset-2
 				.day.day-9
@@ -45,4 +49,13 @@ section#plan
 				.day.day-10
 					h4.day-title 10
 					p.day-text Ритуал на предназначение и поиск своего пути
-		+b('button-wrapper-plan','','#!','Записаться на курс','_blank')
+		p.cost.cost-full Стоимость:
+			span 3 500р.
+		p.cost.cost-sale Скидка:
+			span#sale 600р.
+		p.cost.cost-today Стоимость сегодня:
+			span#today 2 900р.
+		+b('button-wrapper-plan','','https://shop.mastervision.su/?r=ordering/cart/as1&id=4364&clean=true&lg=ru','Записаться на тренинг','_blank','link')
+		.timer
+			h4.timer-title Скидка сгорит через:
+			.clock

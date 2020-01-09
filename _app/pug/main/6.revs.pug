@@ -1,45 +1,48 @@
 section#revs
 	+gt('','Отзывы учеников')
 	.container
-		#text-revs.carousel.slide(data-ride="carousel" data-interval="false")
-			.carousel-inner(role="listbox")
-				.item.active
-					a(href="img/revs/text_0.jpg" data-fancybox="text-revs").text-revs-link
-						img(src="img/revs/text_0.jpg", alt="Отзыв о Жанне Абрамовой 0")
-				each n in [1,2,3,7,11,12,14,15,17]
-					.item
-						a(href="img/revs/text_"+n+".jpg" data-fancybox="text-revs").text-revs-link
-							img(src="img/revs/text_"+n+".jpg", alt="Отзыв о Жанне Абрамовой "+n)
-			ol.carousel-indicators
-				li.active( data-target="#text-revs" data-slide-to="0")
-				li( data-target="#text-revs" data-slide-to="1")
-				li( data-target="#text-revs" data-slide-to="2")
-				li( data-target="#text-revs" data-slide-to="3")
-				li( data-target="#text-revs" data-slide-to="4")
-				li( data-target="#text-revs" data-slide-to="5")
-				li( data-target="#text-revs" data-slide-to="6")
-				li( data-target="#text-revs" data-slide-to="7")
-				li( data-target="#text-revs" data-slide-to="8")
-				li( data-target="#text-revs" data-slide-to="9")
-			.controls.text_controls
-				a( class="left carousel-control" href="#text-revs" role="button" data-slide="prev")
-				a( class="right carousel-control" href="#text-revs" role="button" data-slide="next")
-		#video-revs.carousel.slide(data-ride="carousel" data-interval="false")
-			.carousel-inner(role="listbox")
-				.item.active
-					.video-wrapper.video-wrapper-revs(data-youtube="J0gbCyy1tes" data-img="img/revs/video_1.jpg")
-						img(src="img/revs/video_1.jpg", alt="Отзыв о Жанне Абрамовой 1")
-				each n in [2,3,4,5,6]
-					.item
-						.video-wrapper.video-wrapper-revs(data-youtube="zexrNBJSQkU" data-img="img/revs/video_"+n+".jpg")
-							img(src="img/revs/video_"+n+".jpg", alt="Отзыв о Жанне Абрамовой "+n)
-			ol.carousel-indicators
-				li.active( data-target="#video-revs" data-slide-to="0")
-				li( data-target="#video-revs" data-slide-to="1")
-				li( data-target="#video-revs" data-slide-to="2")
-				li( data-target="#video-revs" data-slide-to="3")
-				li( data-target="#video-revs" data-slide-to="4")
-				li( data-target="#video-revs" data-slide-to="5")
-			.controls.text_controls
-				a( class="left carousel-control" href="#video-revs" role="button" data-slide="prev")
-				a( class="right carousel-control" href="#video-revs" role="button" data-slide="next")
+		.row
+			.col-md-6.col-sm-6
+				#text-revs.carousel.slide(data-ride="carousel" data-interval="false")
+					.carousel-inner(role="listbox")
+						.item.active
+							a(href="img/revs/text-0.jpg" data-fancybox="text-revs").text-revs-link
+								img.text-rev-img(src="img/revs/text-0.jpg", alt="Отзыв о Жанне Абрамовой 0")
+						each n in [1,2,3,7,11,12,14,15,17]
+							.item
+								a(href="img/revs/text-"+n+".jpg" data-fancybox="text-revs").text-revs-link
+									img.text-rev-img(src="img/revs/text-"+n+".jpg", alt="Отзыв о Жанне Абрамовой "+n)
+					ol.carousel-indicators
+						li.active( data-target="#text-revs" data-slide-to="0")
+						li( data-target="#text-revs" data-slide-to="1")
+						li( data-target="#text-revs" data-slide-to="2")
+						li( data-target="#text-revs" data-slide-to="3")
+						li( data-target="#text-revs" data-slide-to="4")
+						li( data-target="#text-revs" data-slide-to="5")
+						li( data-target="#text-revs" data-slide-to="6")
+						li( data-target="#text-revs" data-slide-to="7")
+						li( data-target="#text-revs" data-slide-to="8")
+						li( data-target="#text-revs" data-slide-to="9")
+					.controls.text_controls
+						a( class="left carousel-control" href="#text-revs" role="button" data-slide="prev")
+						a( class="right carousel-control" href="#text-revs" role="button" data-slide="next")
+			.col-md-6.col-sm-6
+				#video-revs.carousel.slide(data-ride="carousel" data-interval="false")
+					.carousel-inner(role="listbox")
+						.item.active
+							.video-wrapper.video-wrapper-revs(data-youtube="J0gbCyy1tes" data-img="img/revs/video-1.jpg")
+								img(src="img/revs/video-1.jpg", alt="Отзыв о Жанне Абрамовой 1")
+						each vid, n in {2:'zexrNBJSQkU',3:'D064kkmJ86E',4:'hG9GmxK94VQ',5:'91a9ORXMiB8',6:'yDAFv7SnZ3A'}
+							.item
+								.video-wrapper.video-wrapper-revs(data-youtube=vid data-img="img/revs/video-"+n+".jpg")
+									img(src="img/revs/video-"+n+".jpg", alt="Отзыв о Жанне Абрамовой "+n)
+					ol.carousel-indicators
+						li.active( data-target="#video-revs" data-slide-to="0")
+						li( data-target="#video-revs" data-slide-to="1")
+						li( data-target="#video-revs" data-slide-to="2")
+						li( data-target="#video-revs" data-slide-to="3")
+						li( data-target="#video-revs" data-slide-to="4")
+						li( data-target="#video-revs" data-slide-to="5")
+					.controls.text_controls
+						a( class="left carousel-control" href="#video-revs" role="button" data-slide="prev")
+						a( class="right carousel-control" href="#video-revs" role="button" data-slide="next")
